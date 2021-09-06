@@ -36,6 +36,7 @@ img {
     width: 100%;
 }
 
+/* Navbar */
 .navbar {
     background-color: #1c1c1c;
     color: #fff;
@@ -79,6 +80,11 @@ img {
     height: 100%;
 }
 
+/* Dropdown */
+.contact {
+    cursor: pointer;
+}
+
 .dropdown-content {
     list-style-type: none;
     display: none;
@@ -87,13 +93,15 @@ img {
     padding: 0;
     margin: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
     z-index: 1;
 }
 
 .dropdown-content a {
+    cursor: pointer;
     display: block;
+    margin: 0 auto;
     padding: 8px 16px;
-    text-decoration: none;
 }
 
 .dropdown-content a:hover {
@@ -102,4 +110,14 @@ img {
 
 .contact:hover .dropdown-content {
     display: block;
+}
+
+.dropdown-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.dropdown-bottom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
