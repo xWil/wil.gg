@@ -121,3 +121,21 @@ img {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+/* text */
+.text-vertical-center {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.text-container h1 {
+    font-weight: bolder;
+}
