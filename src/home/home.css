@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --light-grey-rgb: 170 170 170;
+    --dark-grey-rgb: 85 85 85;
+}
+@keyframes pan {
+    0% {
+        background-position: 0 2%;
+    }
+    100% {
+        background-position: 100% 2%;
+    }
+}
+
+.app {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+.star-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stars {
+    background-image: url("/src/assets/star-pattern.svg");
+    background-size: 10%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+    animation: pan 60s linear infinite;
+    z-index: -1;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 85, 85, 1);
+    line-height: 1.2;
+    font-size: 7em;
+    text-shadow: 1px 1px 2px hsl(0, 0%, 10%);
+}
