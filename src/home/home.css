@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 :root {
-    --light-grey-rgb: 170 170 170;
-    --dark-grey-rgb: 85 85 85;
+    --light-red: hsl(0, 100%, 67%);
+    --light-grey: hsl(0 0% 80%);
 }
 @keyframes pan {
     0% {
-        background-position: 0 2%;
+        background-position: 0 7%;
     }
     100% {
-        background-position: 100% 2%;
+        background-position: 100% 7%;
     }
 }
 
 .app {
-    height: 100vh;
-    overflow: hidden;
     position: relative;
     margin: 0;
 }
 .star-container {
-    height: 100%;
-    overflow: hidden;
+    height: 75vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 3px hsl(0, 0%, 10%);
+    z-index: 1;
+    background-color: hsl(0, 0%, 10%);
 }
 .stars {
-    background-image: url("/src/assets/star-pattern.svg");
+    background-image: url("/public/assets/star-pattern.svg");
     background-size: 10%;
     position: absolute;
     top: 0;
@@ -37,13 +37,51 @@
     width: 100%;
     opacity: 0.1;
     animation: pan 60s linear infinite;
-    z-index: -1;
+    z-index: 0;
 }
-
+.title-container {
+    text-align: center;
+}
 .title {
     font-family: 'Lato', sans-serif;
-    color: rgba(255, 85, 85, 1);
+    color: var(--light-red);
     line-height: 1.2;
-    font-size: 7em;
+    font-size: clamp(2.5rem, 9vw, 7rem);
     text-shadow: 1px 1px 2px hsl(0, 0%, 10%);
+    margin: 0;
+}
+.subtitle {
+    font-family: 'Lato', sans-serif;
+    color: var(--light-grey);
+    opacity: 0.5;
+    line-height: 1.2;
+    font-size: clamp(1rem, 3.5vw, 2rem);
+    text-shadow: 1px 1px 2px hsl(0, 0%, 10%);
+    margin: 0;
+}
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: min(3em, 5%);
+    gap: 1rem;
+    align-items: stretch;
+}
+.card-container {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: stretch;
+    gap: 0.1rem;
+}
+.card-title {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: clamp(0.5rem, 2vw, 2rem);
+    margin: 0;
+    padding: 0 0.5rem 0.15rem;
+    translate: 2rem max(-1.7vw, -1.3rem);
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 5px;
+    border: 2px hsl(0, 0%, 8%) solid;
+    box-shadow: 1px 1px 2px hsl(0, 0%, 5%);
 }
