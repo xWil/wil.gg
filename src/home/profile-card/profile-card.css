@@ -41,6 +41,7 @@
 }
 .profile-links {
     flex: 0;
+    aspect-ratio: 1/1;
     display: flex;
     height: clamp(0.5rem, 3.5vw, 2rem);
     gap: 1rem;

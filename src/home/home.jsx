@@ -24,6 +24,11 @@ function home() {
                     <CurrentProject/>
                 </div>
             </div>
+            <div className="divider">
+                <div className="divider-line"></div>
+                <h1 className="divider-text">projects</h1>
+                <div className="divider-line"></div>
+            </div>
         </div>
     )
 }
