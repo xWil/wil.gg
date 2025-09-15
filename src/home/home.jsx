@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './home.css'
 
 import ProfileCard from './profile-card/profile-card.jsx'
-import CurrentProject from "./current-project/current-project";
+import CurrentProject from "./current-project/current-project.jsx";
+import ProjectList from "./project-list/project-list.jsx";
 
 function home() {
     return (
@@ -29,6 +30,7 @@ function home() {
                 <h1 className="divider-text">projects</h1>
                 <div className="divider-line"></div>
             </div>
+            <ProjectList/>
         </div>
     )
 }
