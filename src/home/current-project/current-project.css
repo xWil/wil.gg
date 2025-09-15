@@ -1,5 +1,6 @@
 .project-card {
     flex: 1 1 400px;
+    min-height: 135px;
     display: flex;
     align-items: stretch;
     background-color: hsl(0, 0%, 12%);

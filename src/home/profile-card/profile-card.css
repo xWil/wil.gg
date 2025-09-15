@@ -46,10 +46,19 @@
     height: clamp(0.5rem, 3.5vw, 2rem);
     gap: 1rem;
     padding-top: 0.5rem;
+    align-items: center;
+}
+.profile-links a {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 .profile-link {
-    flex: 1 1 20px;
     height: 100%;
+    width: auto;
+    display: block;
 }
 .profile-description {
     flex: 1;

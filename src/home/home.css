@@ -68,7 +68,7 @@
     align-items: stretch;
 }
 .card-container {
-    flex: 1 1 400px;
+    flex: 1 1 600px;
     display: flex;
     align-items: stretch;
     gap: 0.1rem;
