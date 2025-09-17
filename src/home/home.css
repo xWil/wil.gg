@@ -1,7 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 :root {
+    font-size: 16px;
+
     --light-red: hsl(0, 100%, 67%);
     --light-grey: hsl(0 0% 80%);
+
+    --star-size: 10%;
+    --title-size: 8rem;
+    --subtitle-size: 2rem;
+
+    --card-title-size: clamp(0.5rem, 2vw, 2rem);
+    --profile-picture-margin: 0% 2% 0;
+    --profile-title-size: 3rem;
+    --profile-description-size: 1.5rem;
+
+    --divider-text-size: clamp(1rem, 2vw, 2rem);
+
+    --project-banner-size: 8rem;
+    --project-logo-size: 6rem;
+    --project-title-size: 2rem;
+    --project-description-size: 1.25rem;
+    --project-tag-size: 1rem;
+}
+@media (hover: none) and (pointer: coarse) {
+    :root {
+        font-size: 32px;
+
+        --star-size: 25%;
+        --profile-picture-margin: 2% 2% 0;
+        --card-title-size: 1rem;
+    }
 }
 @keyframes pan {
     0% {
@@ -28,7 +56,7 @@
 }
 .stars {
     background-image: url("/public/assets/star-pattern.svg");
-    background-size: 10%;
+    background-size: var(--star-size);
     position: absolute;
     top: 0;
     left: 50%;
@@ -46,7 +74,7 @@
     font-family: 'Lato', sans-serif;
     color: var(--light-red);
     line-height: 1.2;
-    font-size: clamp(2.5rem, 9vw, 7rem);
+    font-size: var(--title-size);
     text-shadow: 1px 1px 2px hsl(0, 0%, 10%);
     margin: 0;
 }
@@ -55,7 +83,7 @@
     color: var(--light-grey);
     opacity: 0.5;
     line-height: 1.2;
-    font-size: clamp(1rem, 3.5vw, 2rem);
+    font-size: var(--subtitle-size);
     text-shadow: 1px 1px 2px hsl(0, 0%, 10%);
     margin: 0;
 }
@@ -77,10 +105,10 @@
     position: absolute;
     font-family: 'Lato', sans-serif;
     color: hsl(0, 0%, 100%);
-    font-size: clamp(0.5rem, 2vw, 2rem);
+    font-size: var(--card-title-size);
     margin: 0;
     padding: 0 0.5rem 0.15rem;
-    translate: min(2rem, 5vw) max(-1.7vw, -1.3rem);
+    translate: min(2rem, 5vw) calc(var(--card-title-size) / -1.5);
     background-color: hsl(0, 0%, 12%);
     border-radius: 5px;
     border: 2px hsl(0, 0%, 8%) solid;
@@ -103,7 +131,7 @@
 .divider-text {
     font-family: 'Lato', sans-serif;
     color: hsl(0, 0%, 100%);
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: var(--divider-text-size);
     font-weight: 500;
     margin: 0;
 }
