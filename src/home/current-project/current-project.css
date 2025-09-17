@@ -33,6 +33,7 @@
     flex: 0 0 auto;
     display: block;
     font-family: 'Lato', sans-serif;
+    font-weight: var(--font-regular);
     color: var(--light-red);
     font-size: var(--profile-title-size);
     text-shadow: 1px 1px 2px hsl(0, 0%, 10%);
@@ -42,8 +43,8 @@
 .current-project-description {
     flex: 1;
     font-family: 'Lato', sans-serif;
+    font-weight: var(--font-light);
     color: var(--light-grey);
-    font-weight: 500;
     font-size: var(--profile-description-size);
     margin-bottom: min(0.5rem, 5%);
     margin-top: 0;

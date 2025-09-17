@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 :root {
-    font-size: 16px;
-
     --light-red: hsl(0, 100%, 67%);
     --light-grey: hsl(0 0% 80%);
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-bold: 700;
 
     --star-size: 10%;
     --title-size: 8rem;
@@ -21,6 +22,8 @@
     --project-title-size: 2rem;
     --project-description-size: 1.25rem;
     --project-tag-size: 1rem;
+
+    font-size: 16px;
 }
 @media (hover: none) and (pointer: coarse) {
     :root {
@@ -72,6 +75,7 @@
 }
 .title {
     font-family: 'Lato', sans-serif;
+    font-weight: var(--font-regular);
     color: var(--light-red);
     line-height: 1.2;
     font-size: var(--title-size);
@@ -80,6 +84,7 @@
 }
 .subtitle {
     font-family: 'Lato', sans-serif;
+    font-weight: var(--font-regular);
     color: var(--light-grey);
     opacity: 0.5;
     line-height: 1.2;
@@ -106,6 +111,7 @@
     font-family: 'Lato', sans-serif;
     color: hsl(0, 0%, 100%);
     font-size: var(--card-title-size);
+    font-weight: var(--font-regular);
     margin: 0;
     padding: 0 0.5rem 0.15rem;
     translate: min(2rem, 5vw) calc(var(--card-title-size) / -1.5);
@@ -130,8 +136,8 @@
 }
 .divider-text {
     font-family: 'Lato', sans-serif;
+    font-weight: var(--font-regular);
     color: hsl(0, 0%, 100%);
     font-size: var(--divider-text-size);
-    font-weight: 500;
     margin: 0;
 }
